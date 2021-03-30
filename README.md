@@ -1,2 +1,0 @@
-# The-Community
-Business website
