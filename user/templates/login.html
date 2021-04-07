@@ -2,7 +2,10 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+{% block title %}Login{% endblock %}
+
 {% block content %}
+<br>
 <link href="{% static 'css/register.css' %}" rel="stylesheet">
 
  <form method="POST" class='form-group' >
@@ -12,15 +15,13 @@
 
   <div class="container">
       {% csrf_token %}
+      {{ form|crispy }}
         <p>Don't have an account? Create one <a href="/register">here</a></p>
         <button type="submit" class="btn btn-success">Login</button>	
           <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
           </label>
     </div>
-    <div class="border-top pt-3">
-		<small class="text-muted">Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up Now</a></small>
-	</div>
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>

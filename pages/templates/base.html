@@ -5,8 +5,6 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>The Community</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,23 +44,35 @@
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-        </ul>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'profile' %}">Profile</a></li>
+          <li><a href="{% url 'logout' %}">Logout</a></li>
+          {% else %}
+          <li><a href="{% url 'login' %}">Login</a></li>
+          <a href="{% url 'register' %}" class="get-started-btn ml-auto" style="padding-left: 30px;padding-bottom: 8px;border-left-style: solid;left: 500px;border-left-width: 0px;">Get Started</a>
+          </ul>
+        {% endif %}
 
       </nav>
-      <!-- .nav-menu -->
-
-      <a href="{% url 'register' %}" class="get-started-btn ml-auto">Get Started</a>
-
     </div>
   </header>
   <!-- End Header -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 </body>
-
+<!--/. A short message for forms -->
+<div class="container-fluid">
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+      {% endfor %}
+    {% endif %}
 {% block content %}
 {% include 'footer.html' %}
 {% endblock %}
+</div>
 
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>

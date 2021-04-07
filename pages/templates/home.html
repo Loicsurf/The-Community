@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}Home{% endblock %}
+
 {% block content %}
 <br><br><br><br>
 <!-- ======= Hero Section ======= -->
@@ -16,6 +18,7 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Welcome to <span>The Community</span></h2>
+              <h3 class="account-heading">{{ user.username }}</h3>
               <p class="animate__animated animate__fadeInUp">The Upcoming Innovative Project For Africa</p>
               <a href="{% url 'about' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -39,6 +42,18 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">An Outstanding Team</h2>
               <p class="animate__animated animate__fadeInUp">The Community Is Made Up Of Brilliant Minds Coming Up With Brilliant Ideas To Move On.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(static/image/team8.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(static/image/prod12.jpg)">
+          <div class="carousel-container">
+            <div class="container">
             </div>
           </div>
         </div>
