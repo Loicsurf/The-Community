@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<br><br><br><br>
+<!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(static/image/nesc3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>The Community</span></h2>
+              <h3 class="account-heading">{{ user.username }}</h3>
+              <p class="animate__animated animate__fadeInUp">The Upcoming Innovative Project For Africa</p>
+              <a href="{% url 'about' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(static/image/nesc2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Division Of Labour</h2>
+              <p class="animate__animated animate__fadeInUp">The Community Is Splitted Up Into Various Departments </p>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(static/image/nesc1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">An Outstanding Team</h2>
+              <p class="animate__animated animate__fadeInUp">The Community Is Made Up Of Brilliant Minds Coming Up With Brilliant Ideas To Move On.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(static/image/team8.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(static/image/prod12.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+   <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2>What is the community?</h2>
+            <h3>The community is a project which is aim at creating a town, it is made up of different departments, the different departments are in charge of various tasks assigned to them.</h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              The Community works according to some set of objectives or tasks to follow, such as;
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Getting every product and services a low cost</li>
+              <li><i class="ri-check-double-line"></i> Enjoying best quality of everything</li>
+              <li><i class="ri-check-double-line"></i> Enjoy products from skilled and professional workers of The Community</li>
+              <li><i class="ri-check-double-line"></i> Receiving and spending a little</li>
+              <li><i class="ri-check-double-line"></i> Accumulating wealth and investing in business.</li>
+            </ul>
+            <p class="font-italic">
+              The Community's main goal is to ensure that all customers are satisfied
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  </main><!-- End #main -->
+{% include 'footer.html' %}
+{% endblock %}
