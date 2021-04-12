@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-fr">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -39,17 +39,17 @@
 
       <nav class="nav-menu d-none d-lg-block">
 
-        <ul>
-          <li><a href="{% url 'home' %}">Home</a></li>
+        <ul style="margin-left: 200px;">
+          <li><a href="{% url 'home' %}" style="text-decoration:blink">Home</a></li>
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
           {% if user.is_authenticated %}
-          <li><a href="{% url 'profile' %}">Profile</a></li>
-          <li><a href="{% url 'logout' %}">Logout</a></li>
+          <li><a href="{% url 'profile' %}" style="left: 400px;">Profile</a></li>
+          <li><a href="{% url 'logout' %}" style="left: 400px;">Logout</a></li>
           {% else %}
-          <li><a href="{% url 'login' %}">Login</a></li>
-          <a href="{% url 'register' %}" class="get-started-btn ml-auto" style="padding-left: 30px;padding-bottom: 8px;border-left-style: solid;left: 500px;border-left-width: 0px;">Get Started</a>
+          <li><a href="{% url 'login' %}" class="get-started-btn ml-auto" style="padding-left: 30px;padding-bottom: 8px;border-left-style: solid;left: 450px;border-left-width: 0px;">Login</a></li>
+          <a href="{% url 'register' %}" class="get-started-btn ml-auto" style="padding-left: 30px;border-left-style: solid;left: 200px;border-left-width: 0px;padding-bottom: 8px;margin-top: 11px;margin-bottom: 11px;">Get Started</a>
           </ul>
         {% endif %}
 
