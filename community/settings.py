@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """
 Django settings for mysite project.
 
@@ -137,7 +137,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = '/'
 WAGTAIL_SITE_NAME = 'The Community'
-=======
+
 """
 Django settings for mysite project.
 
@@ -163,15 +163,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0#7go1v_dgm@1+=#q)-3aka5&i$!=@lcgef^ddujm=ybn6--_&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-<<<<<<< HEAD:community/community/community/settings.py
-DEBUG = False
-
-ALLOWED_HOSTS = ['loicsurf.pythonanywhere.com']
-=======
 DEBUG = True
 
 ALLOWED_HOSTS = []
->>>>>>> 0f483d01ab6760cab32fc96696b3ffd3f86d66dd:community/settings.py
 
 
 # Application definition
@@ -281,4 +275,3 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = '/'
 WAGTAIL_SITE_NAME = 'The Community'
->>>>>>> 40a31d446ac2d69e0793ebc5b7e1f4f5c378834f
