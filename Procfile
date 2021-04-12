@@ -7,3 +7,4 @@ six==1.15.0
 toml==0.10.2
 virtualenv==20.4.3
 whitenoise==5.2.0
+web: gunicorn community.wsgi
