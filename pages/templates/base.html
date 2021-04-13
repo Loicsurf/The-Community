@@ -45,7 +45,6 @@
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
           {% if user.is_authenticated %}
-          <li><a href="{% url 'profile' %}" style="left: 400px;">Profile</a></li>
           <li><a href="{% url 'logout' %}" style="left: 400px;">Logout</a></li>
           {% else %}
           <li><a href="{% url 'login' %}" class="get-started-btn ml-auto" style="padding-left: 30px;padding-bottom: 8px;border-left-style: solid;left: 450px;border-left-width: 0px;">Login</a></li>
