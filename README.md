@@ -1,6 +1,9 @@
 # The-Community
 Business website
 
+nesc3.jpg![image](https://user-images.githubusercontent.com/58171734/120307901-672bb780-c2cb-11eb-8aa9-bd4464825e25.png)
+
+
 What is the community?
 
 The community is a project which is aim at creating a town, it is made up of different departments, the different departments are in charge of various tasks assigned to them and they are set with the following objectives;
